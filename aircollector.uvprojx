@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\APP;.\CORE;.\HARDWARE\24CXX;.\HARDWARE\BEEP;.\HARDWARE\BME280;.\STM32F10x_FWLib\inc;.\SYSTEM\delay;.\SYSTEM\sys;.\HARDWARE\IO;.\HARDWARE\IO_IIC;.\HARDWARE\IO_SPI;.\HARDWARE\LED;.\HARDWARE\RTC;.\HARDWARE\SPI;.\HARDWARE\TimerPWM;.\HARDWARE\TIMER;.\HARDWARE\USART;.\HARDWARE\W25QXX;.\MODULES\FATFS\src;.\HARDWARE\SDIO</IncludePath>
+              <IncludePath>.\APP;.\CORE;.\HARDWARE\24CXX;.\HARDWARE\BEEP;.\HARDWARE\BME280;.\STM32F10x_FWLib\inc;.\SYSTEM\delay;.\SYSTEM\sys;.\HARDWARE\IO;.\HARDWARE\IO_IIC;.\HARDWARE\IO_SPI;.\HARDWARE\LED;.\HARDWARE\RTC;.\HARDWARE\SPI;.\HARDWARE\TimerPWM;.\HARDWARE\TIMER;.\HARDWARE\USART;.\HARDWARE\W25QXX;.\MODULES\FATFS\src;.\HARDWARE\SDIO;.\HARDWARE\HSC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -505,6 +505,16 @@
               <FileName>ioiic.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\HARDWARE\IO_IIC\ioiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>hsc_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HARDWARE\HSC\hsc_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>hsc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HARDWARE\HSC\hsc.c</FilePath>
             </File>
           </Files>
         </Group>

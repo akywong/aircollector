@@ -96,7 +96,23 @@ u8 SPI1_ReadWriteByte(u8 TxData)
 	return SPI_I2S_ReceiveData(SPI1); //返回通过SPIx最近接收的数据					    
 }
 
-
+//SPIx 读一个字节
+//返回值:读取到的字节
+u8 SPI1_ReadByte(u8 *buf,u8 n)
+{				   			 
+	u8 retry=0;		
+	u8 i=0;
+	for(i=0;i<n;i++){
+		retry=0;
+		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET) //检查指定的SPI标志位设置与否:接受缓存非空标志位
+		{
+			retry++;
+			if(retry>200)return i;
+		}	  						    
+		buf[i++]=SPI_I2S_ReceiveData(SPI1); //返回通过SPIx最近接收的数据			
+	}
+	return i;
+}
 
 
 

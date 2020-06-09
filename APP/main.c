@@ -12,6 +12,7 @@
 #include "24cxx.h"
 #include "bme280.h"
 #include "TimerPWM.h"
+#include "hsc.h"
 #include "main.h"
 
 uint8_t send_cmd[12] = {0x01,0x03,0x00,0x15,0x00,0x02,0xD5,0xCF};

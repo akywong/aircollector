@@ -22,4 +22,3 @@ void IO_Init(void)
 	GPIO_Init(OUTLET_GPIO, &GPIO_InitStructure);
 	
 }
- 

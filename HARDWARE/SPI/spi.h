@@ -28,6 +28,7 @@ void SPI1_Init(void);			       //初始化SPI1口
 void SPI1_SetSpeed(u8 SpeedSet);   //设置SPI1速度  		 
 void SPI1_SetMode(u8 cpol,u8 cpha);
 u8 SPI1_ReadWriteByte(u8 TxData);  //SPI1总线读写一个字节
+u8 SPI1_ReadByte(u8 *buf,u8 n);
 
 void SPI2_Init(void);			        //初始化SPI口
 void SPI2_SetSpeed(u8 SpeedSet);    //设置SPI速度
